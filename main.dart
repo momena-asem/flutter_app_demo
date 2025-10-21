@@ -27,7 +27,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// 🌟 Main Screen with Navigation
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
 
@@ -79,7 +78,7 @@ class _MainScreenState extends State<MainScreen> {
   }
 }
 
-// 🏠 Home Page
+//  Home Page
 class HomePage extends StatelessWidget {
   final Function(int) onNavigate;
 
@@ -146,7 +145,7 @@ class HomePage extends StatelessWidget {
               ),
               const SizedBox(height: 40),
               ElevatedButton(
-                onPressed: () => onNavigate(1), // يروح لصفحة About
+                onPressed: () => onNavigate(1), 
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFF6366F1),
                   foregroundColor: Colors.white,
@@ -175,7 +174,7 @@ class HomePage extends StatelessWidget {
   }
 }
 
-// ℹ️ About Page
+//  About Page
 class AboutPage extends StatelessWidget {
   final Function(int) onNavigate;
 
@@ -244,7 +243,7 @@ class AboutPage extends StatelessWidget {
               ),
               const SizedBox(height: 40),
               ElevatedButton(
-                onPressed: () => onNavigate(2), // يروح لصفحة Contact
+                onPressed: () => onNavigate(2), 
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFF6366F1),
                   foregroundColor: Colors.white,
@@ -273,7 +272,7 @@ class AboutPage extends StatelessWidget {
   }
 }
 
-// ☎️ Contact Page
+// Contact Page
 class ContactPage extends StatelessWidget {
   const ContactPage({super.key});
 
@@ -356,3 +355,4 @@ class ContactPage extends StatelessWidget {
     );
   }
 }
+
